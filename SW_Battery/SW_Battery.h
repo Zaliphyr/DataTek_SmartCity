@@ -28,7 +28,7 @@ public:
      * @param dangerZone When the user should be notified about the battery level.
      * @return Battery charge remaining in %.
      */
-    float calculatePowerConsumption(int currentPower, int dangerZone);
+    float calculatePowerConsumption(int dangerZone);
 
     /**
      * @brief Calculates the average speed over a time frame.
@@ -43,7 +43,7 @@ public:
      *
      * @return the average speed of the car in cm/s.
      */
-    float calculateAverageCarSpeed();
+    float calculateAverageCarSpeed(bool onlyWhenDriving);
 
     /**
      * @brief Calculates the maximum speed of the car.
