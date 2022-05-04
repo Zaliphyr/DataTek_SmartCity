@@ -107,7 +107,7 @@ float SWBattery::calculateSpeedOverPercent(int percent, bool onlyWhenDriving)
     static float drivingTime = 0;
     static float percentAboveSpeed = 0;
 
-    if ((calculateMaxCarSpeed() * (percent / 100)) < deltaTime)
+    if ((calculateMaxCarSpeed() * (percent / 100)) < deltaSpeed)
     {
         timeOverDelta += millis() - millisCompensation;
     }
