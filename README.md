@@ -1,2 +1,2 @@
 # DataTek_SmartCity
-Final repo for project in Smart City project in IELET1002
+All code files used in our SmartCity project to deliver with our final project in IELET1002
