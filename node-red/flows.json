@@ -1,0 +1,1483 @@
+[
+    {
+        "id": "ea94ab16400e4cc3",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "02f8f1d3ca160492",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c690ab6e89c99a94",
+        "type": "tab",
+        "label": "MQTT-modul",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "34ba0f55c9471254",
+        "type": "tab",
+        "label": "Ladestasjon",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "10e78a89.5b4fd5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "61285987.c20328",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "d05494a39b51034d",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false
+    },
+    {
+        "id": "dc6fe9ae7919ce68",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "MidjoByen",
+                "default": "#4B7930",
+                "baseColor": "#88c0dc",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#88c0dc",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#5e81ac",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#2e3440",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#2e3440",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#88c0dc",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#2e3440",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#2e3440",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eceff4",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#88c0dc",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#2e3440",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d05494a39b51034d",
+        "type": "ui_tab",
+        "name": "Main",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5eb7bd5583f894fc",
+        "type": "ui_group",
+        "name": "Ladestasjon",
+        "tab": "359692e2a8627cfd",
+        "order": 3,
+        "disp": false,
+        "width": 13,
+        "collapse": false
+    },
+    {
+        "id": "bb2c2f516e4071ee",
+        "type": "ui_group",
+        "name": "Debug",
+        "tab": "d05494a39b51034d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "359692e2a8627cfd",
+        "type": "ui_tab",
+        "name": "Charging",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "74f3bd55fc5520e9",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 2,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "702dc22213ed6109",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 6,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "f05a3711b351eb81",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 9,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "38d96b16c0f8f76c",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "af3478ccb183e505",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "fd279b6bd550eaa4",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 24,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9b9166b1506d16de",
+        "type": "ui_spacer",
+        "z": "c690ab6e89c99a94",
+        "name": "spacer",
+        "group": "5eb7bd5583f894fc",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4b8548676aa186f9",
+        "type": "ui_group",
+        "name": "Manual Control",
+        "tab": "9566abe06350ad1b",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "9566abe06350ad1b",
+        "type": "ui_tab",
+        "name": "TempFlow",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ce634240b37b804f",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7cd8dbe4a5240556",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 3,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "426f8d35ea77c085",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c75519fc448689fa",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "91d254327fb1b66c",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 7,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2f31fb7d90ca4507",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c09cf36bc8742a6f",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "941f0f8b97fc2e6a",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 10,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "20bb87eec8f138c7",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "77a64bd1b7e48cbf",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f2d6790db85d9223",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 13,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2942c723e05f7f1e",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cbc8eba5330673d0",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a3acbab98cdd1140",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 16,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "154f88b02ee75b47",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4a4646d2651764eb",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a29d6b3cf026ca15",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 19,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "441962c28b01c5e1",
+        "type": "ui_spacer",
+        "z": "ea94ab16400e4cc3",
+        "name": "spacer",
+        "group": "4b8548676aa186f9",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bcf413a8253d95ed",
+        "type": "mqtt in",
+        "z": "02f8f1d3ca160492",
+        "name": "",
+        "topic": "esp32/online",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "306770177593f835",
+                "d9acc6d3c1e3ac34"
+            ]
+        ]
+    },
+    {
+        "id": "306770177593f835",
+        "type": "debug",
+        "z": "02f8f1d3ca160492",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d9acc6d3c1e3ac34",
+        "type": "ui_toast",
+        "z": "02f8f1d3ca160492",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 470,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e934c5749bc8c3dc",
+        "type": "mqtt in",
+        "z": "c690ab6e89c99a94",
+        "name": "",
+        "topic": "esp32/from_sens",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "2eb5aafb4d38527a",
+                "51dc522316fd29ce"
+            ]
+        ]
+    },
+    {
+        "id": "e132605035bd4382",
+        "type": "ui_text",
+        "z": "c690ab6e89c99a94",
+        "group": "61285987.c20328",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Car status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1070,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2eb5aafb4d38527a",
+        "type": "debug",
+        "z": "c690ab6e89c99a94",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7395c85479145140",
+        "type": "ui_template",
+        "z": "c690ab6e89c99a94",
+        "group": "61285987.c20328",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 120,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51dc522316fd29ce",
+        "type": "function",
+        "z": "c690ab6e89c99a94",
+        "name": "Update car values",
+        "func": "let array = msg.payload.split(\",\");\nswitch (array[0]){\n    case \"status\":\n        flow.set(\"car_status\", array[1]);\n        break;\n    case \"mode\":\n        flow.set('car_mode', array[1]);\n        break;\n    case \"job\":\n        flow.set('car_job', array[1]);\n        break;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "d79eecb2f7be0fb4"
+            ]
+        ]
+    },
+    {
+        "id": "712a7a33edda7a52",
+        "type": "mqtt out",
+        "z": "c690ab6e89c99a94",
+        "name": "",
+        "topic": "esp32/to_sens",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 540,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "38d356118cb7d98c",
+        "type": "ui_button",
+        "z": "c690ab6e89c99a94",
+        "name": "",
+        "group": "61285987.c20328",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "yas,yes",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "712a7a33edda7a52"
+            ]
+        ]
+    },
+    {
+        "id": "238ab32559b0a595",
+        "type": "function",
+        "z": "c690ab6e89c99a94",
+        "name": "Display car status",
+        "func": "var val=flow.get('car_status') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "e132605035bd4382"
+            ]
+        ]
+    },
+    {
+        "id": "d79eecb2f7be0fb4",
+        "type": "function",
+        "z": "c690ab6e89c99a94",
+        "name": "Update all values",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 480,
+        "wires": [
+            [
+                "238ab32559b0a595",
+                "f94ea62e2dd440ea",
+                "ec7736bf9c56f8fb"
+            ]
+        ]
+    },
+    {
+        "id": "c2ba290743db62e1",
+        "type": "ui_text",
+        "z": "c690ab6e89c99a94",
+        "group": "61285987.c20328",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Car mode:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1070,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0c8ff22c6bf321f9",
+        "type": "ui_text",
+        "z": "c690ab6e89c99a94",
+        "group": "61285987.c20328",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Car job:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1060,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f94ea62e2dd440ea",
+        "type": "function",
+        "z": "c690ab6e89c99a94",
+        "name": "Display car mode",
+        "func": "var val=flow.get('car_mode') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 400,
+        "wires": [
+            [
+                "c2ba290743db62e1"
+            ]
+        ]
+    },
+    {
+        "id": "ec7736bf9c56f8fb",
+        "type": "function",
+        "z": "c690ab6e89c99a94",
+        "name": "Display car job",
+        "func": "var val=flow.get('car_job') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "0c8ff22c6bf321f9"
+            ]
+        ]
+    },
+    {
+        "id": "673034b261ec5fc3",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "LADESTASJON",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "0d0e2c343cbbb85e",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Penger:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 800,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2e993ca69f5e8389",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "BIL: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 790,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "da1c26ede602a6bb",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 12,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "100$",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 420,
+        "wires": [
+            [
+                "10a1d760b91a58a1"
+            ]
+        ]
+    },
+    {
+        "id": "c411c1253d9031a1",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 14,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "button2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "10a1d760b91a58a1"
+            ]
+        ]
+    },
+    {
+        "id": "b439cc58057cdc92",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 16,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "button3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 500,
+        "wires": [
+            [
+                "10a1d760b91a58a1"
+            ]
+        ]
+    },
+    {
+        "id": "9d7907744ddf4d22",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 18,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "button4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 540,
+        "wires": [
+            [
+                "10a1d760b91a58a1"
+            ]
+        ]
+    },
+    {
+        "id": "112ef9c3056b282b",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 22,
+        "width": 9,
+        "height": 2,
+        "passthru": false,
+        "label": "Cancel",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "d582dc48b209c339"
+            ]
+        ]
+    },
+    {
+        "id": "3e65d87c03776919",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 11,
+        "width": 10,
+        "height": 2,
+        "name": "",
+        "label": "Full charge",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 810,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "caaa604d755ad442",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 13,
+        "width": 10,
+        "height": 2,
+        "name": "",
+        "label": "Half charge",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 810,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9f731f3c99517fec",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 15,
+        "width": 10,
+        "height": 2,
+        "name": "",
+        "label": "20%",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "84c92f6f69d875b2",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 17,
+        "width": 10,
+        "height": 2,
+        "name": "",
+        "label": "10%",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "59818d20556a5989",
+        "type": "mqtt in",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "topic": "esp32/from_charger",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "d364a908caac97d0"
+            ]
+        ]
+    },
+    {
+        "id": "62573e1d17c58534",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "1,2000,5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1,2000,5,",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "e6ab17f99b6b7009"
+            ]
+        ]
+    },
+    {
+        "id": "e6ab17f99b6b7009",
+        "type": "mqtt out",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "topic": "esp32/chg_arrive",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d364a908caac97d0",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Update values",
+        "func": "let array = msg.payload.split(\",\");\nswitch (array[0]){\n    case \"status\":\n        flow.set(\"chg_status\", array[1]);\n        break;\n    case \"id\":\n        flow.set('chg_id', array[1]);\n        break;\n    case \"batt\":\n        flow.set('chg_battery', array[1]);\n        break;\n    case \"money\":\n        flow.set('chg_money', array[1]);\n        break;\n    case \"p0\":\n        flow.set('chg_p0', array[1]);\n        break;\n    case \"p1\":\n        flow.set('chg_p1', array[1]);\n        break;\n    case \"p2\":\n        flow.set('chg_p2', array[1]);\n        break;\n    case \"p3\":\n        flow.set('chg_p3', array[1]);\n        break;\n    case \"p4\":\n        flow.set('chg_p4', array[1]);\n        break;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "3827a2446e78a82d"
+            ]
+        ]
+    },
+    {
+        "id": "ca5c9296c11cac42",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display id",
+        "func": "var val=flow.get('chg_id') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 320,
+        "wires": [
+            [
+                "2e993ca69f5e8389"
+            ]
+        ]
+    },
+    {
+        "id": "ce0b8a589eced501",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display money",
+        "func": "var val=flow.get('chg_money') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 240,
+        "wires": [
+            [
+                "0d0e2c343cbbb85e"
+            ]
+        ]
+    },
+    {
+        "id": "1ff0a344b9f5f7cc",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display p0",
+        "func": "var val=flow.get('chg_p0') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 420,
+        "wires": [
+            [
+                "3e65d87c03776919"
+            ]
+        ]
+    },
+    {
+        "id": "a1d8a23e252d1543",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display p1",
+        "func": "var val=flow.get('chg_p1') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "caaa604d755ad442"
+            ]
+        ]
+    },
+    {
+        "id": "264d3c08bfcfa9e0",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display p2",
+        "func": "var val=flow.get('chg_p2') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [
+                "9f731f3c99517fec"
+            ]
+        ]
+    },
+    {
+        "id": "807e8ef531676f9e",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display p3",
+        "func": "var val=flow.get('chg_p3') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 540,
+        "wires": [
+            [
+                "84c92f6f69d875b2"
+            ]
+        ]
+    },
+    {
+        "id": "284ee40afebb16d2",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 19,
+        "width": 10,
+        "height": 2,
+        "name": "",
+        "label": "5%",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 790,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e5b6564f062eb9be",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display p4",
+        "func": "var val=flow.get('chg_p4') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 580,
+        "wires": [
+            [
+                "284ee40afebb16d2"
+            ]
+        ]
+    },
+    {
+        "id": "c7a51aebb893cd47",
+        "type": "mqtt out",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "topic": "esp32/chg_leave",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 610,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8ded1ddeb43a5ab3",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 20,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "button5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 580,
+        "wires": [
+            [
+                "10a1d760b91a58a1"
+            ]
+        ]
+    },
+    {
+        "id": "3827a2446e78a82d",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Update all values",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "ce0b8a589eced501",
+                "ca5c9296c11cac42",
+                "1ff0a344b9f5f7cc",
+                "a1d8a23e252d1543",
+                "264d3c08bfcfa9e0",
+                "807e8ef531676f9e",
+                "e5b6564f062eb9be",
+                "3741bffd2d37ab07",
+                "da09200659d88a4a"
+            ]
+        ]
+    },
+    {
+        "id": "ec36da4dafcea0d9",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 800,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3741bffd2d37ab07",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display status",
+        "func": "var val=flow.get('chg_status') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "ec36da4dafcea0d9"
+            ]
+        ]
+    },
+    {
+        "id": "d582dc48b209c339",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Reset values",
+        "func": "flow.set('chg_id', \"\");\nflow.set('chg_battery', \"\");\nflow.set('chg_money', \"\");\nmsg.payload = \"\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "3827a2446e78a82d",
+                "c7a51aebb893cd47"
+            ]
+        ]
+    },
+    {
+        "id": "da09200659d88a4a",
+        "type": "function",
+        "z": "34ba0f55c9471254",
+        "name": "Display battery",
+        "func": "var val=flow.get('chg_battery') || \"\";\nmsg.payload = val;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 360,
+        "wires": [
+            [
+                "cea2bf345fc9cd51"
+            ]
+        ]
+    },
+    {
+        "id": "cea2bf345fc9cd51",
+        "type": "ui_text",
+        "z": "34ba0f55c9471254",
+        "group": "5eb7bd5583f894fc",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "Chg:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 790,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "10a1d760b91a58a1",
+        "type": "mqtt out",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "topic": "esp32/chg_start",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 1280,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "3db9b95358379c75",
+        "type": "ui_button",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "group": "5eb7bd5583f894fc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "2,40,10",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "2,40,10,",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "e6ab17f99b6b7009"
+            ]
+        ]
+    },
+    {
+        "id": "65b6fd9b973be06c",
+        "type": "template",
+        "z": "34ba0f55c9471254",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<style>\nmd-button{\n    padding: 3px;\n}\n</style>",
+        "output": "str",
+        "x": 900,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    }
+]
